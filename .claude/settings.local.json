@@ -1,8 +1,18 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npm -v)",
-      "Bash(npx create-next-app@latest . --typescript --tailwind --app --no-git --eslint --import-alias \"@/*\")"
+      "Bash(npm install *)",
+      "Bash(npm audit *)",
+      "Bash(npm run *)",
+      "Bash(echo \"started with pid $!\")",
+      "Bash(netstat -ano)",
+      "Bash(tasklist *)",
+      "Bash(curl -s -o /dev/null -w \"HTTP %{http_code}\\\\n\" http://localhost:3001/)",
+      "Bash(curl -s http://localhost:3001/)",
+      "Bash(curl -s -o /dev/null -w \"reader/demo: HTTP %{http_code}\\\\n\" http://localhost:3001/reader/demo)",
+      "Bash(curl -s \"http://localhost:3001/_next/static/css/app/layout.css?v=1787867271598\")",
+      "Read(//c/Program Files/Google/Chrome/Application/**)",
+      "Read(//c/Program Files \\\\\\(x86\\\\\\)/Microsoft/Edge/Application/**)"
     ]
   }
 }
